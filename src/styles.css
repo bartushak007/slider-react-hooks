@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.slider {
+  position: relative;
+}
+
+.slider__buttons-container {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  bottom: 0px;
+}
+
+.slider__button {
+  background: #999999;
+  border: 0;
+  transition: 0.5s;
+  width: 10%;
+  height: 11px;
+  margin: 0 5px;
+}
+
+.slider__button--active {
+  background: red;
+}
+
+.slider-area {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-area__image {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.slider-area__container {
+  display: flex;
+  transition: 1s;
+  margin: 0;
+  padding: 0;
+}

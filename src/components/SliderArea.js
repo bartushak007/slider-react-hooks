@@ -10,7 +10,7 @@ const SliderArea = ({ images, currentSlide }) => {
           style={{ transform: `translateX(${-100 * currentSlide}%)` }}
         >
           {images.map(({ alt, src }) => (
-            <Image {...{ alt, src }} />
+            <Image key={src} {...{ alt, src }} />
           ))}
         </div>
       </div>
